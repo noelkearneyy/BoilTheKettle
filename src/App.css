@@ -1,0 +1,66 @@
+
+.container {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin: 0;
+    color: white;
+    font-size: 3rem;
+}
+
+.row {
+    text-align: center;
+}
+
+.row p {
+    font-size: 1.5rem;
+}
+
+.socialsContainer {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    right: 2%;
+    top: 3%;
+}
+
+.socialIcon {
+    cursor: pointer;
+}
+
+
+@keyframes bgcolor {
+    0% {
+        background-color: rgb(153 246 228);
+    }
+
+    30% {
+        background-color: rgb(94 234 212);
+    }
+
+    60% {
+        background-color: rgb(45 212 191);
+    }
+
+    90% {
+        background-color: rgb(20 184 166);
+    }
+
+    100% {
+        background-color: rgb(13 148 136);
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 10s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    font-family: monospace;
+    color: white;
+    overflow: hidden;
+}
